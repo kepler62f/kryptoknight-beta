@@ -17,6 +17,6 @@ class StaticController < ApplicationController
   def help
   end
 
-  def userprofile
+  def account_setting
   end
 end

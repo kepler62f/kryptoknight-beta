@@ -2,9 +2,6 @@ Rails.application.routes.draw do
 
   root 'static#home'
 
-# get '/register', to: 'static_page#register'
-# get '/posts/:id', to: 'static_page#show_post', as: 'single_post'
-
   get '/signup', to: 'static#signup', as: 'signup'
 
   get '/login', to: 'static#login', as: 'login'
@@ -15,7 +12,7 @@ Rails.application.routes.draw do
 
   get '/help', to: 'static#help', as: 'help'
 
-  get '/userprofile', to: 'static#userprofile', as: 'userprofile'
+  get '/userprofile', to: 'static#account_setting', as: 'account_setting'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
