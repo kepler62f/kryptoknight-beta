@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KryptoKnight Beta</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>KryptoKnight Beta</h1>
+    <h2>Navigation Bar</h2>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">HOME</a></li>
+      <li><%=link_to "SIGNUP", signup_path%></li>
+      <li><%=link_to "LOGIN", login_path %></li>
+      <li><%=link_to "EXCHANGE", exchange_path %></li>
+      <li><%=link_to "PORTFOLIO", portfolio_path %></li>
+      <li><%=link_to "HELP", help_path %></li>
+      <li><%=link_to'USER PROFILE', userprofile_path%></li>
+    </ul>
+
+    <%= yield %>
+
+
+  </body>
+</html>
